@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Akash Makhija portfolio for power systems, renewable integration, grid reliability, and data-driven power system analysis.">
+  <title>Akash Makhija | Power Systems Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#hero" aria-label="Akash Makhija home">AM</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#research">Research</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero section-band">
+      <div class="hero-content">
+        <p class="eyebrow">Power Systems | Renewable Integration | Grid Reliability</p>
+        <h1>Akash Makhija</h1>
+        <p class="hero-text">
+          Electrical Engineering graduate student focused on load flow, voltage stability,
+          dynamic studies, transmission planning, and data-driven power system analysis.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="assets/documents/akash-resume.pdf" download>Download Resume</a>
+          <a class="button secondary" href="#projects">View Projects</a>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="Portfolio highlights">
+        <div>
+          <span class="metric">M.S.E.</span>
+          <span>Electrical Engineering, ASU</span>
+        </div>
+        <div>
+          <span class="metric">3.67 / 4.00</span>
+          <span>Graduate GPA</span>
+        </div>
+        <div>
+          <span class="metric">IEEE NAPS</span>
+          <span>Research paper submitted</span>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" class="content-section">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>Power engineering with a practical grid studies focus.</h2>
+      </div>
+      <p class="lead">
+        I am an Electrical Engineering graduate student at Arizona State University specializing
+        in power systems analysis, renewable integration, and grid reliability. My work combines
+        simulation tools such as PSSE and PowerWorld with Python, MATLAB, and time-series analysis
+        to study modern grid behavior.
+      </p>
+    </section>
+
+    <section id="projects" class="content-section">
+      <div class="section-heading">
+        <p class="eyebrow">Featured Projects</p>
+        <h2>Grid studies across renewables, AI loads, and transmission planning.</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <p class="tag">Dynamic Load Modeling</p>
+          <h3>Measurement-Based Modeling of AI Data-Center GPU Power Fluctuations</h3>
+          <p>
+            Analyzed MIT Supercloud GPU power traces from BERT-based AI workload jobs with
+            Python, pandas, NumPy, matplotlib, and SciPy FFT. The work identified burst-like
+            GPU power behavior and dominant frequency components near 1.44-1.45 Hz and 0.87 Hz.
+          </p>
+          <a class="text-link" href="assets/documents/ai-data-center-gpu-power-fluctuations.pdf">Open Report</a>
+        </article>
+
+        <article class="project-card">
+          <p class="tag">Solar IBR Dynamics</p>
+          <h3>Coordinated Generator and Aggregated Solar IBR Behavior</h3>
+          <p>
+            Studied grid-following solar IBR behavior in PSSE using a 3-bus system and modified
+            IEEE 9-bus test system. The study evaluated WECC REGCA, REECA, and REPCA models,
+            LVRT, PLL response, and voltage support during faults.
+          </p>
+          <a class="text-link" href="assets/documents/coordinated-generator-solar-ibr-dynamics.pdf">Open Report</a>
+        </article>
+
+        <article class="project-card">
+          <p class="tag">Transmission Planning</p>
+          <h3>Least-Cost Transmission Design for KWW Wind Farm Interconnection</h3>
+          <p>
+            Evaluated transmission upgrade cases for integrating a 200 MW wind farm into the
+            MLP system. The selected Case 4 design used three 69 kV Condor lines, satisfied N-1
+            reliability requirements, and produced an estimated net economic impact of $7.36M.
+          </p>
+          <a class="text-link" href="assets/documents/least-cost-kww-wind-farm-interconnection-redacted.pdf">Open Report</a>
+        </article>
+
+        <article class="project-card">
+          <p class="tag">Energy Markets</p>
+          <h3>Solar IBR Impacts on Day-Ahead Electricity Markets</h3>
+          <p>
+            Analyzed CAISO solar generation, load, net-load, and LMP data to evaluate midday
+            price suppression, duck-curve behavior, evening ramp conditions, net-load variability,
+            and grid balancing needs.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="research" class="split-section">
+      <div>
+        <p class="eyebrow">Research</p>
+        <h2>AI data-center power behavior and system dynamics.</h2>
+      </div>
+      <div class="timeline">
+        <article>
+          <h3>Graduate Research Volunteer, Arizona State University</h3>
+          <p>
+            Conducted research under Prof. Meng Wu on AI data-center power behavior using MIT
+            Supercloud GPU/CPU telemetry. The work supported measurement-based load modeling,
+            PSSE dynamic simulation studies, and an IEEE NAPS-submitted research paper.
+          </p>
+        </article>
+        <article>
+          <h3>Utility-Scale Playback Workflow</h3>
+          <p>
+            Developed a measurement-based scaling and PSSE playback workflow to convert GPU-level
+            traces into utility-scale AI data-center load profiles, including a 500 MW data-center
+            fluctuation applied in the WECC 179-bus system.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="content-section">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>Technical strengths from grid studies to data analysis.</h2>
+      </div>
+      <div class="skills-grid">
+        <div>
+          <h3>Power Systems</h3>
+          <p>Load flow, voltage stability, transient stability, short-circuit analysis, fault analysis, VAR control, IBRs, transmission planning, protection, contingency analysis.</p>
+        </div>
+        <div>
+          <h3>Tools</h3>
+          <p>PSSE, PowerWorld, PSCAD, MATLAB, Python, PLECS, NREL SAM, CX-One, Omron PLC, Veichi HMI.</p>
+        </div>
+        <div>
+          <h3>Data & Analytics</h3>
+          <p>Time-series analysis, data processing, visualization, scenario analysis, FFT analysis, CAISO data analysis, regression, forecasting.</p>
+        </div>
+        <div>
+          <h3>Programming</h3>
+          <p>Python, MATLAB scripting, ladder logic, C, C++, pandas, NumPy, Matplotlib, SciPy.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="split-section">
+      <div>
+        <p class="eyebrow">Education</p>
+        <h2>Academic foundation in electrical and electronics engineering.</h2>
+      </div>
+      <div class="timeline">
+        <article>
+          <h3>Arizona State University</h3>
+          <p>M.S.E., Electrical Engineering | Expected May 2027</p>
+          <p>Ira A. Fulton School of Engineering | GPA: 3.67 / 4.00</p>
+        </article>
+        <article>
+          <h3>Gujarat Technological University</h3>
+          <p>Bachelor's of Engineering, Electronics & Communication Engineering | June 2023</p>
+          <p>CGPA: 7.73 / 10</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="content-section">
+      <div class="section-heading">
+        <p class="eyebrow">Experience</p>
+        <h2>Research, industrial maintenance, and automation experience.</h2>
+      </div>
+      <div class="experience-list">
+        <article>
+          <h3>Graduate Research Volunteer</h3>
+          <p class="meta">Arizona State University | Tempe, Arizona</p>
+          <p>
+            Researched AI data-center power behavior using MIT Supercloud telemetry, Python,
+            pandas, NumPy, matplotlib, and SciPy FFT for load modeling and PSSE dynamic studies.
+          </p>
+        </article>
+        <article>
+          <h3>Maintenance & Industrial Automation</h3>
+          <p class="meta">Gwalior Silk House | Vadodara, Gujarat</p>
+          <p>
+            Maintained VFDs, relays, motors, and control panels; designed a PLC-based conveyor
+            control system using demand-based logic and sensor inputs; supported solar adoption
+            evaluation that identified programs leading to approximately Rs. 80,000 in cost savings.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Open to internships in power systems, transmission planning, renewable energy, and grid operations.</h2>
+      </div>
+      <div class="contact-actions">
+        <a class="button primary" href="mailto:amakhi10@asu.edu">amakhi10@asu.edu</a>
+        <a class="button secondary" href="tel:+16027055281">+1 6027055281</a>
+        <span class="linkedin">LinkedIn: Akash Makhija</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Akash Makhija. Built with HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
